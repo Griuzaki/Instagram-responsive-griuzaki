@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-color: #fafafa;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.images {
+    position: relative;
+    bottom: 5px;
+}
+
+.img-cel {
+    width: 450px;
+}
+
+.img-insta {
+    height: 520px;
+    position: absolute;
+    left: 153px;
+    top: 26px;
+    transition: ease-in-out 2s;
+}
+
+
+
+main {
+    border: 1px solid #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    padding: 30px;
+}
+
+input {
+    height: 36px;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    margin-top: 10px;
+    padding: 3px;
+
+}
+
+button {
+    background-color: #0095f6;
+    height: 30px;
+    border-radius: 3px;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+button:active {
+    opacity: .6;
+}
+
+
+.facebook {
+    color: #385185;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.facebook:hover {
+    position: relative;
+    transform: scale(1.1);
+}
+
+.esqueceu-senha {
+    color: #385185;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 20px;
+}
+
+.esqueceu-senha:hover {
+    position: relative;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        display: grid;
+    }
+
+    main {
+        justify-self: center;
+        margin-top: 25px;
+    }
+
+    .img-cel {
+        width: 375px;
+    }
+
+    .img-insta {
+        height: 447px;
+        left: 123px;
+        top: 17px;
+    }
+}
