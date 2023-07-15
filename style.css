@@ -76,11 +76,13 @@ button:active {
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
+    
 }
 
 .facebook:hover {
     position: relative;
     transform: scale(1.1);
+    transition: ease 1s;
 }
 
 .esqueceu-senha {
@@ -94,6 +96,7 @@ button:active {
 .esqueceu-senha:hover {
     position: relative;
     transform: scale(1.1);
+    transition: ease 1s;
 }
 
 @media screen and (max-width: 800px) {
